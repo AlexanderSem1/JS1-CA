@@ -106,12 +106,14 @@ data.cards.forEach(function(data){
         a.setAttribute("Class", "btn btn-success"); 
         a.textContent = "View More"; 
         container.appendChild(a); 
+        
+        document.getElementById("no-result").style.display = "none"; 
 
         }else {
             document.getElementById("no-result").style.display = "inline"; 
             console.log("Why won't your work!!"); 
             return false; 
-        }
+        } 
     
 }); 
 });
