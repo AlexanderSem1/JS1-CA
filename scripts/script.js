@@ -78,7 +78,7 @@ fetch('https://api.magicthegathering.io/v1/cards')
     
 let searchInput = document.getElementById("search").value;
 
-data.cards.forEach(function(data){
+let tonyH = data.cards.forEach(function(data){
     
     let trimText = searchInput.trim()
    
@@ -112,7 +112,9 @@ data.cards.forEach(function(data){
         }else {
             document.getElementById("no-result").style.display = "inline"; 
             console.log("Why won't your work!!"); 
+             
             return false; 
+            
         } 
     
 }); 
